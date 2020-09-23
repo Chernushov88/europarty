@@ -168,6 +168,12 @@ $(function ($) {
     })
   }
 
+  $('.showPass').parent().click(function(){
+    let inp = $(this).children('input'),
+        type = inp.attr('type') == "text" ? "password" : 'text';
+    inp.prop('type', type);
+  });
+
 });
 $(document).mouseup(function (e) {
   var container = $(".drop");

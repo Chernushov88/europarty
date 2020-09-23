@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-  <meta name="viewport" content="width=1280px">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--  <meta name="viewport" content="width=1280px">-->
   <link rel="shortcut icon" href="img/favicon.ico">
   <title>home</title>
   <!--    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
@@ -18,13 +18,18 @@
   <div class="header-top backgroundOrangeLight">
     <div class="container">
       <div class="header-top-in">
-        <ul class="col header-top-in-left">
+        <ul class="col header-top-in-left menu" id="menu">
           <li><a href="#">About service</a></li>
           <li><a href="#">Contacts</a></li>
           <li><a href="#">Advertising</a></li>
           <li><a href="#">News</a></li>
           <li><a href="#">Help Center</a></li>
         </ul>
+        <button class="touch touch_menu" onclick="touchMenu(this, '#menu')">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <ul class="col header-top-in-right">
           <li class="lang">
             <img src="img/header/flag.png" alt="">
@@ -52,17 +57,13 @@
         <button type="submit"></button>
       </div>
       <div class="header-center-btn">
-        <a href="`#" class="btn">Register now</a>
-        <a href="" class="btn btn_orange">LOGIN</a>
+        <a href="`#" class="btn" onclick="showPopup('#register')">Register now</a>
+        <a href="" class="btn btn_orange" onclick="showPopup('#signin')">LOGIN</a>
       </div>
     </div>
   </div>
 
-  <button class="touch touch_menu" onclick="touchMenu(this, '#menu')">
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-  </button>
+
 </header>
 <section class="baner-section">
   <div class="owl-carousel owl-theme" id="baner-slider">
@@ -1095,64 +1096,175 @@
     </div>
   </div>
 </section>
-<!--<footer class="footer">-->
-<!--  <div class="container">-->
-<!--    <a href="#" class="footer-logo">-->
-<!--      <img src="img/logo-footer.png" alt="">-->
-<!--    </a>-->
-<!--    <div class="footer-social">-->
-<!--      <div class="h5">Следуйте за нами</div>-->
-<!--      <ul>-->
-<!--        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>-->
-<!--        <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>-->
-<!--        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
-<!--        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>-->
-<!--      </ul>-->
-<!--    </div>-->
-<!--    <div class="col-contact">-->
-<!--      <div class="h5">Связаться через</div>-->
-<!--      <a href="#">Whatsapp</a>-->
-<!--    </div>-->
-
-<!--    <div class="col-contact">-->
-<!--      <div class="h5">Связаться через</div>-->
-<!--      <a href="#">E-mail</a>-->
-<!--    </div>-->
-<!--    <a href="#" class="callback sm-visible" onclick="showPopup('#applicationSent')">Заказать звонок</a>-->
-<!--    <div class="col-info">-->
-<!--      <a href="#">Правовая информация</a>-->
-<!--      <p><span>© 2005–2020</span> ООО «АТБ Электроника» <br>Разработано в РА VOZDUH</p>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</footer>-->
-<div class="popup" id="requestCallPopup">
-  <a href="#" class="close" onclick="hidePopup('#requestCallPopup')">
-    <img src="img/close.png" alt="">
-  </a>
-  <div class="popup-in">
-    <div class="h3">Оставьте заявку</div>
-    <form action="">
-      <input type="text" placeholder="Имя *" required>
-      <input type="text" placeholder="E-mail *" class="phone">
-      <div class="checkbox-block">
-        <input type="checkbox" class="checkbox" id="check">
-        <label for="check">
-          <span>Ознакомлен с политикой конфиденциальности</span>
-        </label>
+<footer class="footer">
+  <div class="container">
+    <div class="flex">
+      <div class="col">
+        <div class="h5">about Europarty</div>
+        <ul>
+          <li><a href="#">About service</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Advertising</a></li>
+        </ul>
       </div>
-      <button type="submit">отправить</button>
-    </form>
+      <div class="col">
+        <div class="h5">help</div>
+        <ul>
+          <li><a href="#">For establishment owners</a></li>
+          <li><a href="#" class="active">For event organizers</a></li>
+          <li><a href="#">Help Center</a></li>
+        </ul>
+      </div>
+      <div class="col col-center">
+        <div class="col-center-in">
+          <div class="h5">account</div>
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Check in</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col col-social">
+        <div class="h5">we are in social networks</div>
+        <ul class="social">
+          <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
-<div class="popup" id="applicationSent">
-  <a href="#" class="close" onclick="hidePopup('#applicationSent')">
+  <div class="copypast">
+    <div class="container">
+      <div class="copypast-in">
+        <span>© Europarty. 2020. All rights reserved.</span>
+        <ul>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms of use</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="popup" id="signin">
+  <a href="#" class="close" onclick="hidePopup('#signin')">
     <img src="img/close.png" alt="">
   </a>
-  <div class="popup-in">
-    <div class="h3">Заявка отправлена</div>
-    <p>Потребительская культура переворачивает рейтинг, стиль необходимостью.</p>
-  </div>
+  <div class="h3">Sign in</div>
+  <div class="popup-text">Please fill in all required fields</div>
+  <form action="">
+    <ul>
+      <li>
+        <input type="email" placeholder="E-mail" required>
+        <div class="icon">
+          <img src="img/email-icon.png" alt="">
+        </div>
+      </li>
+      <li>
+        <input type="password" placeholder="Password">
+        <div class="icon showPass">
+          <img src="img/password-icon.png" alt="">
+        </div>
+      </li>
+      <li>
+        <button type="submit" class="btn btn_orange">отправить</button>
+      </li>
+    </ul>
+  </form>
+  <ul class="popup-list">
+    <li>
+      <ul class="popup-list-in">
+        <li><a href="#">Forgot your password?</a></li>
+        <li><span>Don't have an account?</span> <a href="#">Register now</a></li>
+      </ul>
+    <li>
+      <ul class="popup-list-in">
+        <li><b>Login with:</b></li>
+        <li>
+          <ul class="social">
+            <li><a href="#"><img src="img/social/google-bg.png" alt=""></a></li>
+            <li><a href="#"><img src="img/social/facebook-bg.png" alt=""></a></li>
+            <li><a href="#"><img src="img/social/apple-bg.png" alt=""></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <p>By logging into your account or creating a new one, you agree to the policy<a href="#">confidentiality</a> and <a
+      href="#">user agreement</a></p>
 </div>
+<div class="popup" id="register">
+  <a href="#" class="close" onclick="hidePopup('#register')">
+    <img src="img/close.png" alt="">
+  </a>
+  <div class="h3">Register now</div>
+  <div class="popup-text">Choose your role on the portal:</div>
+  <ul class="list-radio">
+    <li>
+      <input type="radio" class="radio" id="radio-1" name="radio">
+      <label for="radio-1">
+        <b>I am a user</b>
+        <span>I am interested in events and want to receive interesting offers</span>
+      </label>
+    </li>
+    <li>
+      <input type="radio" class="radio" id="radio-2" name="radio">
+      <label for="radio-2">
+        <b>I am a representative of the institution</b>
+        <span>I want to publish my establishment or event on the portal</span>
+      </label>
+    </li>
+  </ul>
+  <form action="">
+    <ul>
+      <li>
+        <input type="email" placeholder="E-mail" required>
+        <div class="icon">
+          <img src="img/password-icon.png" alt="">
+        </div>
+      </li>
+      <li>
+        <input type="password" placeholder="Password" class="">
+        <div class="icon showPass">
+          <img src="img/password-icon.png" alt="">
+        </div>
+      </li>
+      <li>
+        <input type="password" placeholder="Confirm password" class="">
+        <div class="icon showPass">
+          <img src="img/password-icon.png" alt="">
+        </div>
+      </li>
+      <li>
+        <button type="submit" class="btn btn_orange">отправить</button>
+      </li>
+    </ul>
+  </form>
+  <ul class="popup-list">
+    <li>
+      <ul class="popup-list-in" style="justify-content: center;">
+        <li>Have an account? <a href="#">Sign in</a></li>
+      </ul>
+    <li>
+      <ul class="popup-list-in">
+        <li><b>Register via:</b></li>
+        <li>
+          <ul class="social">
+            <li><a href="#"><img src="img/social/google-bg.png" alt=""></a></li>
+            <li><a href="#"><img src="img/social/facebook-bg.png" alt=""></a></li>
+            <li><a href="#"><img src="img/social/apple-bg.png" alt=""></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <p>By logging into your account or creating a new one, you agree to the policy<a href="#">confidentiality</a> and <a
+      href="#">user agreement</a></p>
+</div>
+
+
 <div class="darken"></div>
 <div id="scroll"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></div>
 <script src="js/main.js"></script>
@@ -1162,3 +1274,6 @@
 <!--</script>-->
 </body>
 </html>
+
+<!--remote.b.dzencode@gmail.com-->
+<!--wL6kF3a4-->
