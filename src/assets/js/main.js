@@ -5,11 +5,11 @@ $(function ($) {
   var ua = navigator.userAgent;
   // с помощью регулярок проверяем наличие текста,
   // соответствующие тому или иному браузеру
-  if (ua.search(/Chrome/) > 0) console.log('Google Chrome');
-  if (ua.search(/Firefox/) > 0) $('body').addClass('body_firefox');
-  if (ua.search(/Opera/) > 0) console.log('Opera');
-  if (ua.search(/Safari/) > 0) console.log('Safari');
-  if (ua.search(/MSIE/) > 0) console.log('Internet Explorer');
+  // if (ua.search(/Chrome/) > 0) console.log('Google Chrome');
+  // if (ua.search(/Firefox/) > 0) $('body').addClass('body_firefox');
+  // if (ua.search(/Opera/) > 0) console.log('Opera');
+  // if (ua.search(/Safari/) > 0) console.log('Safari');
+  // if (ua.search(/MSIE/) > 0) console.log('Internet Explorer');
 
   /* -- owl-carusel ---
   $('#baner-slider').owlCarousel({
@@ -124,9 +124,9 @@ $(function ($) {
       $('.drop').find('li').click(function () {
         var selectResult = $(this).html();
         var selectValue = $(this).attr('value');
-        console.log(selectValue);
+        //console.log(selectValue);
         $(this).parent().parent().find('input').val(selectValue).trigger('change');
-        console.log($(this).parent().parent().find('input').val());
+        //console.log($(this).parent().parent().find('input').val());
         $(this).parent().parent('.select').find('.slct').removeClass('active').html(selectResult);
         dropBlock.slideUp(150);
       });
@@ -134,12 +134,12 @@ $(function ($) {
       $(this).removeClass('active');
       dropBlock.slideUp();
     }
-    console.log('I am work!!');
+    //console.log('I am work!!');
     return false;
   });
 
   if ( $(window).width() > 1200 ) {
-    console.log('$(window).width() > 1200', $(window).width())
+   // console.log('$(window).width() > 1200', $(window).width())
     $('.menu li').hover(
       function () {
         $(this).addClass('hover')
@@ -154,15 +154,15 @@ $(function ($) {
       if ($('.header').hasClass('hover')){
         let subHeight = $('.menu .act .sub').height();
         document.querySelector('.header').style.marginBottom = subHeight + 'px'
-        console.log($('.header'))
-        console.log(subHeight)
+        // console.log($('.header'))
+        // console.log(subHeight)
       }else{
-        console.log('none class hover')
+        //console.log('none class hover')
       }
     }, 100)
   }
   if ($(window).width() < 1200) {
-    console.log('$(window).width() < 1200', $(window).width())
+    //console.log('$(window).width() < 1200', $(window).width())
     $('.menu li').click(function () {
       $(this).toggleClass('active')
     })
@@ -173,6 +173,38 @@ $(function ($) {
         type = inp.attr('type') == "text" ? "password" : 'text';
     inp.prop('type', type);
   });
+
+  $('.nav-tabs').on('click', function(e){
+    console.log(e.target.href)
+
+    e.preventDefault();
+    console.log(e.target)
+
+    let targetElem = e.target,
+        tabHref = $(targetElem).attr('href'),
+        tabH1 = $(targetElem).text(),
+        parentAtive = $(e.target).parent('li')
+    console.log($(tabHref).parent().hasClass('tab-content-in'))
+    console.log(parentAtive)
+    console.log(tabH1)
+
+    if ($(this).hasClass('nav-tabs-in')){
+      $('.tab-content-in > .tab-pane').removeClass('in active')
+      $('.nav-tabs-in > li').removeClass('active')
+    } else if ($(this).hasClass('nav-tabs-btn')){
+      $('.tab-content-btn > .tab-pane').removeClass('in active')
+      $('.nav-tabs-btn > li').removeClass('active')
+    } else{
+        $('.tab-pane').not('.tab-pane-in').not('.tab-pane-btn').removeClass('in active')
+      $('.nav-tabs').not('.nav-tabs-in').not('.nav-tabs-btn').find('li').removeClass('active')
+      $('.baner-section-in .h1').text(tabH1)
+    }
+    $(tabHref).addClass('in active')
+    parentAtive.addClass('active')
+
+  })
+
+
 
 });
 $(document).mouseup(function (e) {
@@ -189,13 +221,13 @@ function showPopup(target, elem, img, imgSm, arr) {
   $(target).addClass('open');
   if (elem){
     let title = elem.innerText;
-    console.log(title)
+    //console.log(title)
     document.querySelector(`${target} .h3`).innerText = title
-    console.log(document.querySelector(`${target} .h3`).innerText)
+    //console.log(document.querySelector(`${target} .h3`).innerText)
     document.querySelector('#baner-img .img1').src = img;
     document.querySelector('#baner-img .img2').src = imgSm;
-    console.log(document.querySelector('#baner-img').src)
-    console.log(img)
+    //console.log(document.querySelector('#baner-img').src)
+    //console.log(img)
     let list = document.querySelector(`${target} .list`)
     list.innerHTML = arr
   }
@@ -234,7 +266,7 @@ window.addEventListener('load', function () {
 
 
   darken.addEventListener('click', function (e) {
-    console.log(e)
+    //console.log(e)
     darken.classList.remove('active');
     popupAll.forEach((e)=>{
       e.classList.remove('open');
@@ -324,16 +356,16 @@ window.addEventListener('load', function () {
 
 
 function send(url, form_id, result_div) {
-  console.log('url', url);
-  console.log('form_id', form_id);
-  console.log('result_div', result_div);
+  // console.log('url', url);
+  // console.log('form_id', form_id);
+  // console.log('result_div', result_div);
   jQuery.ajax({
     type: "POST",
     url: url,
     data: jQuery(form_id).serialize(),
     // Выводим то что вернул PHP
     success: function (html) {
-      console.log('success', html);
+      //console.log('success', html);
       jQuery(result_div).fadeIn(1800);
       jQuery(result_div).empty();
       jQuery(result_div).append(html);
@@ -345,7 +377,7 @@ function send(url, form_id, result_div) {
       }, 60000)
     },
     error: function (html) {
-      console.log('error', html);
+      //console.log('error', html);
       // jQuery(result_div).empty();
       // jQuery(result_div).append("Ошибка!");
     }

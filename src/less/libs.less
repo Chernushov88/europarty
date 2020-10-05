@@ -5,9 +5,18 @@
 @colorGrey: #99989C;
 @colorDark: #282828;
 @colorBasik: #525252;
-@colorOrange: linear-gradient(257.89deg, #FFA776 0%, #ED925F 100%);
-@colorOrangeLight: #FBF7EF;
+@backgroundOrange: linear-gradient(257.89deg, #FFA776 0%, #ED925F 100%);
+@colorOrangeLigth: #FBF7EF;
+@colorOrange: #ED925F;
 @sizeBasik: 16px;
+.size-lg{
+  line-height: 1;
+  font-weight: 600;
+  font-size: @sizeBasik + 14;
+}
+.size-md{
+  font-size: @sizeBasik - 2;
+}
 
 .scale(@m){
 	-webkit-transform: scale(@m);
@@ -120,8 +129,8 @@
 }
 .scroll{
   &::-webkit-scrollbar-button {
-    width: 16px;
-    height: 14px;
+    width: 8px;
+    height: 6px;
   }
   &::-webkit-scrollbar-track {
     margin-left: 10px;
@@ -130,18 +139,19 @@
   }
   &::-webkit-scrollbar-thumb {
     -webkit-border-radius: 0px;
-    border-radius: 10px;
-    background: #3bc8e7;
+    border-radius: 4px;
+    background: @backgroundOrange;
   }
   &::-webkit-scrollbar-thumb:hover {
-    background: rgb(13, 197, 237);;
+    background: @backgroundOrange;
+    opacity: 0.7;
   }
   &::-webkit-resizer {
-    width: 15px;
-    height: 14px;
+    width: 8px;
+    height: 6px;
   }
   &::-webkit-scrollbar {
-    width: 15px;
+    width: 8px;
   }
 }
 .gradient(@start: #fed018, @end: #feb018){
