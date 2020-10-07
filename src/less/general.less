@@ -16,7 +16,6 @@
 /*------------- header -----------------*/
 .header {
   border: 0px solid #000;
-  background: #fff;
   .transition(1s);
   &.fixed {
     position: fixed;
@@ -193,6 +192,7 @@
         width: 160px;
         padding-left: 34px;
         border: 0px solid transparent;
+        background: transparent;
       }
       button{
         position: absolute;
@@ -937,10 +937,35 @@
             }
           }
         }
+
       }
       &#advertisingCabinet{
+
         .backgroundOrangeLight{
           padding: 15px 0;
+          display: flex;
+          justify-content: space-between;
+          &-adding-an-ad{
+            padding: 40px;
+            .setting-table{
+              width: 890px;
+              margin-top: 0;
+            }
+            .products-row {
+              margin: 0;
+              padding: 0;
+              .h4{
+                margin-top: 0;
+              }
+              .poducts{
+                margin: 0;
+                .item{
+                  min-width: 270px;
+                  margin: 0;
+                }
+              }
+            }
+          }
           &-publication{
             padding: 40px;
             .backgroundWhite{
@@ -990,6 +1015,14 @@
             }
             .img{
               margin-right: 0;
+            }
+          }
+          &.col-40 {
+            display: block;
+            padding: 40px 40px 20px;
+            .setting-table{
+              width: 890px;
+              margin-top: 0;
             }
           }
         }
@@ -1889,17 +1922,20 @@
               display: flex;
             }
           }
-
           input {
-            &[type=text],
-            &[type=password],
-            &[type="email"] {
+            &[type="text"],
+            &[type="password"],
+            &[type="email"],
+            &[type="date"]{
               width: 100%;
               height: 44px;
               padding: 0 20px;
               border: 1px solid #F1F1F1;
               box-sizing: border-box;
               border-radius: 4px;
+              &::-webkit-calendar-picker-indicator{
+                display: none;
+              }
             }
           }
 
@@ -1936,6 +1972,34 @@
               display: flex;
               width: 220px;
               margin-bottom: 20px;
+            }
+          }
+
+          .list-text{
+            display: flex;
+            li{
+              margin-right: 27px;
+              font-size: 14px;
+              &:last-child{
+                margin-right: 0;
+              }
+              b{
+
+              }
+            }
+          }
+          .list-input{
+            display: flex;
+            align-items: center;
+            li{
+              width: 100%;
+              &:last-child{
+                margin-right: 0;
+              }
+              &:nth-child(2){
+                width: auto;
+              }
+              margin-right: 15px;
             }
           }
         }

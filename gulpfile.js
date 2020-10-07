@@ -86,6 +86,7 @@ function scriptsDev() {
     "./src/assets/js/jquery.maskedinput/jquery.maskedinput.min.js",
     "./src/assets/js/owl.carousel/owl.carousel.min.js",
     "./src/assets/js/jquery.fancybox/jquery.fancybox.min.js",
+    "./src/assets/js/bootstrap/tagsinput.js",
     "./src/assets/js/slick/slick.min.js",
     "./src/assets/js/main.js",
   ])

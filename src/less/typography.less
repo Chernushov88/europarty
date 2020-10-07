@@ -7,6 +7,7 @@ html {
 
 body {
   //overflow-x: hidden;
+  min-width: 1280px;
   .transition(1s);
   font-family: 'Avenir Next Cyr';
   font-weight: normal;
@@ -15,6 +16,59 @@ body {
   font-size: @sizeBasik;
   background: #fff;
   color: @colorBasik;
+  &.dark{
+    background: #1F2434;
+    color: #fff;
+    .backgroundOrangeLight {
+      background: #2C3247;
+    }
+    a{
+      color: #fff;
+    }
+    .btn{
+      border: 2px solid #2C3247;
+      background: #2C3247;
+      &:hover {
+        color: #2C3247;
+        background: #fff !important;
+      }
+      &_orange {
+        border-color: #FFA776;
+        background: @backgroundOrange;
+        color: #fff;
+        box-shadow: 0px 15px 30px rgba(255, 167, 118, 0.2);
+        &:hover {
+          background: #fff;
+          color: #FFA776;
+        }
+      }
+      &_red_light {
+        border-color: rgba(232, 75, 75, 0.08);;
+        background: rgba(232, 75, 75, 0.08);;
+        color: #E84B4B;
+        &:hover {
+          //background: #fff;
+          //color: @colorBasik;
+        }
+      }
+      &_white{
+        border-color: #fff;
+        background: #fff;
+        color: #282828;
+        &:hover {
+          border-color: #282828 !important;
+        }
+      }
+      &_grey{
+        border-color: #F1F1F1;
+        background: #F1F1F1;
+        color: #282828;
+        &:hover {
+          border-color: #282828 !important;
+        }
+      }
+    }
+  }
   .lg-block({
     font-size: @sizeBasik - 1;
   });
@@ -243,6 +297,10 @@ select {
     box-sizing: border-box;
     border-radius: 4px;
     background: #fff;
+    .fa{
+      display: none;
+      margin-left: auto;
+    }
     .lg-block({
       height: 40px;
     });
@@ -256,17 +314,17 @@ select {
     }
 
     &:after {
-      content: '';
+      content: "\f0d7";
       position: absolute;
-      right: 20px;
-      top: 50%;
-      width: 8px;
-      height: 5px;
+      right: 30px;
+      top: 35%;
+      font: normal normal normal 14px/1 FontAwesome;
+
       //background: url(../img/arrow_down.png) center no-repeat;
     }
 
     &.active {
-      .fa {
+      .fa, &:after {
         .transform_rotate(180deg);
       }
     }
