@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-    <meta name="viewport" content="width=1280px">
+  <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <meta name="viewport" content="width=1280px">
   <link rel="shortcut icon" href="img/favicon.ico">
   <title>home</title>
   <!--    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
@@ -13,17 +13,17 @@
   <!--    <link rel="stylesheet" href="./css/owl.carousel/owl.theme.min.css">-->
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="dark">
 <header class="header">
   <div class="header-top backgroundOrangeLight">
     <div class="container">
       <div class="header-top-in">
         <ul class="col header-top-in-left menu" id="menu">
-          <li><a href="#">About service</a></li>
-          <li><a href="#">Contacts</a></li>
-          <li><a href="#">Advertising</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Help Center</a></li>
+          <li><a href="#">О сервисе</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Реклама</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Справочный центрr</a></li>
         </ul>
         <button class="touch touch_menu" onclick="touchMenu(this, '#menu')">
           <span class="icon-bar"></span>
@@ -33,10 +33,10 @@
         <ul class="col header-top-in-right">
           <li class="lang">
             <img src="img/header/flag.png" alt="">
-            <a href="#">Russian <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <a href="#">Русский <i class="fa fa-caret-down" aria-hidden="true"></i></a>
           </li>
-          <li><a href="#">For event organizers</a></li>
-          <li><a href="#">Are you the owner of the establishment?</a></li>
+          <li><a href="#">Организаторам мероприятий</a></li>
+          <li><a href="#">Вы владелец заведения?</a></li>
         </ul>
       </div>
 
@@ -45,20 +45,20 @@
   <div class="container">
     <div class="header-center">
       <div class="header-center-logo">
-        <a href class="logo"><img src="img/header/logo.png" alt=""></a>
+        <a href class="logo"><img src="img/dark/header/logo.png" alt=""></a>
       </div>
 
       <div class="header-center-city">
         <img src="img/header/map.png" alt="">
-        <a href="#">Moscow <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+        <a href="#">Москва <i class="fa fa-caret-down" aria-hidden="true"></i></a>
       </div>
       <div class="search">
         <input type="text" placeholder="Events, places ...">
         <button type="submit"></button>
       </div>
       <div class="header-center-btn">
-        <a href="`#" class="btn" onclick="showPopup('#register')">Register now</a>
-        <a href="" class="btn btn_orange" onclick="showPopup('#signin')">LOGIN</a>
+        <a href="`#" class="btn" onclick="showPopup('#register')">Зарегистрироваться</a>
+        <a href="" class="btn btn_orange" onclick="showPopup('#signin')">войти</a>
       </div>
     </div>
   </div>
@@ -80,28 +80,28 @@
     <form action="">
       <div class="flex">
         <div class="filter-section-left">
-          <a href="#" class="caret">Type <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-          <a href="#" class="caret">Event type <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-          <a href="#" class="caret">Event category <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+          <a href="#" class="caret">Тип заведения <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+          <a href="#" class="caret">Тип мероприятия <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+          <a href="#" class="caret">Категория мероприятия <i class="fa fa-caret-down" aria-hidden="true"></i></a>
           <div class="select-date">
             <img src="img/filter-section/select-date.png" alt="">
-            <a href="#">Select date</a>
+            <a href="#">Выберите дату</a>
           </div>
 
         </div>
         <div class="filter-section-right">
           <div class="events">
-            <span class="color-dark">Events</span>
+            <span class="color-dark">События</span>
             <div class="events-border">
               <a href="#" class="btn-events"></a>
             </div>
-            <span>Rent</span>
+            <span>Аренда</span>
           </div>
           <div class="daytime">
-            <img src="img/filter-section/daytime.png" alt="">
-            <a href="#" class="color-orange">Daytime</a>
+            <img src="img/dark/filter-section/daytime.png" alt="">
+            <a href="#" class="color-orange">Ночные</a>
           </div>
-          <a href="#" class="btn btn_orange">pick up an event</a>
+          <a href="#" class="btn btn_orange">подобрать событие</a>
         </div>
       </div>
     </form>
@@ -111,35 +111,31 @@
   <div class="container">
     <div class="flex">
       <aside class="sidebare-news">
-        <div class="h3">News</div>
+        <div class="h3">Новости</div>
         <ul class="sidebare-news-list">
           <li>
-            <div class="h6">Quarantined Rave: Introducing Replacement Entries for
-              Canceled Parties
+            <div class="h6">Рейв на карантине: предствляем записи на замену отмененным вечеринкам
             </div>
             <p>Lorem ipsum dolor sit amet,
               consectetur adipiscing elit. Aenean euismod bibendum</p>
             <div class="data">25.06.2020</div>
           </li>
           <li>
-            <div class="h6">Quarantined Rave: Introducing Replacement Entries for
-              Canceled Parties
+            <div class="h6">Рейв на карантине: предствляем записи на замену отмененным вечеринкам
             </div>
             <p>Lorem ipsum dolor sit amet,
               consectetur adipiscing elit. Aenean euismod bibendum</p>
             <div class="data">25.06.2020</div>
           </li>
           <li>
-            <div class="h6">Quarantined Rave: Introducing Replacement Entries for
-              Canceled Parties
+            <div class="h6">Рейв на карантине: предствляем записи на замену отмененным вечеринкам
             </div>
             <p>Lorem ipsum dolor sit amet,
               consectetur adipiscing elit. Aenean euismod bibendum</p>
             <div class="data">25.06.2020</div>
           </li>
           <li>
-            <div class="h6">Quarantined Rave: Introducing Replacement Entries for
-              Canceled Parties
+            <div class="h6">Рейв на карантине: предствляем записи на замену отмененным вечеринкам
             </div>
             <p>Lorem ipsum dolor sit amet,
               consectetur adipiscing elit. Aenean euismod bibendum</p>
@@ -150,11 +146,11 @@
       </aside>
       <section class="article-wrapp">
         <article class="products-row recommended backgroundOrangeLight">
-          <div class="h3">Recommended <a href="#" class="close"><img src="img/close.png" alt=""></a></div>
+          <div class="h3">Рекомендуем <a href="#" class="close"><img src="img/dark/close.png" alt=""></a></div>
           <ul class="poducts">
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -162,24 +158,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -187,24 +182,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -212,24 +206,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -237,17 +230,16 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
@@ -259,7 +251,7 @@
           <ul class="poducts">
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -267,24 +259,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -292,24 +283,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -317,24 +307,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -342,24 +331,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -367,24 +355,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -392,24 +379,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -417,24 +403,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -442,24 +427,24 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
           </ul>
           <div class="more_btn">
-            <a href="`#" class="btn">Load more</a>
+            <a href="`#" class="btn"><img src="img/dark/more.png" alt=""> загрузить еще</a>
+
           </div>
         </article>
         <article class="products-row ">
@@ -467,7 +452,7 @@
           <ul class="poducts">
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -475,24 +460,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -500,24 +484,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -525,24 +508,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -550,24 +532,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -575,24 +556,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -600,24 +580,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -625,24 +604,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -650,24 +628,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
           </ul>
           <div class="more_btn">
-            <a href="`#" class="btn">Load more</a>
+            <a href="`#" class="btn"><img src="img/dark/more.png" alt=""> загрузить еще</a>
           </div>
         </article>
         <article class="products-row ">
@@ -675,7 +652,7 @@
           <ul class="poducts">
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -683,24 +660,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -708,24 +684,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -733,24 +708,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -758,24 +732,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -783,24 +756,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -808,24 +780,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -833,24 +804,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -858,24 +828,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
           </ul>
           <div class="more_btn">
-            <a href="`#" class="btn">Load more</a>
+            <a href="`#" class="btn"><img src="img/dark/more.png" alt=""> загрузить еще</a>
           </div>
         </article>
         <article class="products-row ">
@@ -883,7 +852,7 @@
           <ul class="poducts">
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -891,24 +860,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -916,24 +884,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -941,24 +908,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -966,24 +932,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -991,24 +956,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -1016,24 +980,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -1041,24 +1004,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="item">
               <a href="" class="img">
-                <span class="img-label">Live music</span>
+                <span class="img-label">Живая музыка</span>
                 <span class="like">
                   <img src="img/product/like-img.png" alt="">
                   <span class="number">20 046</span>
@@ -1066,24 +1028,23 @@
                 <img src="img/product/poducts-img.jpg" alt="">
               </a>
               <div class="item-in">
-                <div class="data">Sep 28, Sun 18:00</div>
-                <div class="h4"><a href="#">Open cocktail party
-                  for everyone</a></div>
+                <div class="data">28 сент. ВС 18:00</div>
+                <div class="h4"><a href="#">Коктейльная вечеринка Cocktail party</a></div>
                 <ul class="list">
                   <li>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>Central Moscow restaurant near Tsaritsyno</span>
+                    <span>Центральный московский ресторан у Царицыно</span>
                   </li>
                   <li>
                     <i class="fa fa-rub" aria-hidden="true"></i>
-                    <span>Entrance: <b>free</b></span>
+                    <span>Вход:  <b>свободный</b></span>
                   </li>
                 </ul>
               </div>
             </li>
           </ul>
           <div class="more_btn">
-            <a href="`#" class="btn">Load more</a>
+            <a href="`#" class="btn"><img src="img/dark/more.png" alt=""> загрузить еще</a>
           </div>
         </article>
       </section>
@@ -1100,32 +1061,32 @@
   <div class="container">
     <div class="flex">
       <div class="col">
-        <div class="h6">about Europarty</div>
+        <div class="h6">O Europarty</div>
         <ul>
-          <li><a href="#">About service</a></li>
-          <li><a href="#">Contacts</a></li>
-          <li><a href="#">Advertising</a></li>
+          <li><a href="#">О сервисе</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Реклама</a></li>
         </ul>
       </div>
       <div class="col">
-        <div class="h6">help</div>
+        <div class="h6">Помощь</div>
         <ul>
-          <li><a href="#">For establishment owners</a></li>
-          <li><a href="#" class="active">For event organizers</a></li>
-          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Владельцам заведений</a></li>
+          <li><a href="#" class="active">Организаторам мероприятий</a></li>
+          <li><a href="#">Справочный центр</a></li>
         </ul>
       </div>
       <div class="col col-center">
         <div class="col-center-in">
-          <div class="h6">account</div>
+          <div class="h6">личный кабинет</div>
           <ul>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Check in</a></li>
+            <li><a href="#">Вход</a></li>
+            <li><a href="#">Регистрация</a></li>
           </ul>
         </div>
       </div>
       <div class="col col-social">
-        <div class="h6">we are in social networks</div>
+        <div class="h6">мы в социальных сетях</div>
         <ul class="social">
           <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
           <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -1138,10 +1099,10 @@
   <div class="copypast">
     <div class="container">
       <div class="copypast-in">
-        <span>© Europarty. 2020. All rights reserved.</span>
+        <span>© Europarty. 2020. Все права защищены.</span>
         <ul>
-          <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Политика конфиденциальности</a></li>
+          <li><a href="#">Пользовательское соглашение</a></li>
         </ul>
       </div>
     </div>
@@ -1195,6 +1156,7 @@
   <p>By logging into your account or creating a new one, you agree to the policy<a href="#">confidentiality</a> and <a
       href="#">user agreement</a></p>
 </div>
+
 <div class="popup" id="register">
   <a href="#" class="close" onclick="hidePopup('#register')">
     <img src="img/close.png" alt="">
@@ -1264,24 +1226,7 @@
       href="#">user agreement</a></p>
 </div>
 
-<div class="test-pages">
-  <ul>
-    <li><a href="/index-dark.html#">/index-dark.html#</a></li>
-    <li><a href="/userAccount.html">/userAccount.html</a></li>
-    <li><a href="/fag-contact.html">/fag-contact.html</a></li>
-    <li><a href="/creatorAccount-My-establishments-view.html">/creatorAccount-My-establishments-view.html</a></li>
-    <li><a href="/creatorAccount-My-establishments-add-event.html">/creatorAccount-My-establishments-add-event.html</a></li>
-    <li><a href="/creatorAccount-My-establishments-add.html">/creatorAccount-My-establishments-add.html</a></li>
-    <li><a href="/creatorAccount-Advertising-cabinet-Yes.html">/creatorAccount-Advertising-cabinet-Yes.html</a></li>
-    <li><a href="/creatorAccount-Advertising-cabinet-Payment-2.html">/creatorAccount-Advertising-cabinet-Payment-2.html</a></li>
-    <li><a href="/creatorAccount-Advertising-cabinet-Payment.html">/creatorAccount-Advertising-cabinet-Payment.html</a></li>
-    <li><a href="/creatorAccount-Advertising-cabinet-No.html">/creatorAccount-Advertising-cabinet-No.html</a></li>
-    <li><a href="/creatorAccount-Advertising-cabinet-Add-article-2.html">/creatorAccount-Advertising-cabinet-Add-article-2.html</a></li>
-    <li><a href="/creatorAccount-Advertising-cabinet-Add-article.html">/creatorAccount-Advertising-cabinet-Add-article.html</a></li>
-    <li><a href="/creatorAccount.html">/creatorAccount.html</a></li>
-    <li><a href="/creatorAccount-Advertising-cabinet-Add.html">/creatorAccount-Advertising-cabinet-Add.html</a></li>
-  </ul>
-</div>
+
 <div class="darken"></div>
 <div id="scroll"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></div>
 <script src="js/main.js"></script>
