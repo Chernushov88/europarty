@@ -65,6 +65,9 @@ body.dark {
 
         &-right {
           li {
+            .slct{
+              color: #fff;
+            }
             a {
 
             }
@@ -79,6 +82,9 @@ body.dark {
       }
 
       &-city {
+        .slct{
+          color: #fff;
+        }
         img {
 
         }
@@ -104,8 +110,15 @@ body.dark {
   .filter-section {
 
     &-left {
-      .caret {
-        white-space: nowrap;
+      flex-wrap: wrap;
+      .caret-wrapp{
+        li {
+          white-space: nowrap;
+          margin-right: 20px;
+          .slct{
+            color: #fff;
+          }
+        }
       }
     }
 
@@ -117,7 +130,7 @@ body.dark {
     }
 
     &-right {
-
+      flex-wrap: wrap;
       .events {
         span {
           color: #434B65;
@@ -158,7 +171,7 @@ body.dark {
     }
   }
 
-  .sidebare-news{
+  .sidebar-news{
     background: #1f2434;
     border-right: 1px solid #2c3247;
 
@@ -255,6 +268,20 @@ body.dark {
     }
   }
 
+  .popup{
+    color: #282828;
+    .h2, .h3{
+      color: #282828;
+    }
+    &#paymentModal{
+
+      .popup-text{
+      }
+      .link{
+      }
+    }
+  }
+  .ui-datepicker {background: #ef9461;}
 }
 
 
@@ -286,15 +313,15 @@ body.dark {
   .flex{
     flex-wrap: nowrap;
     .lg-block({
-      .sidebare-news{
+      .sidebar-news{
         margin-left: 15px;
       }
-      .sidebare-info{
+      .sidebar-info{
         display: none;
       }
     });
     .md-block({
-      .sidebare-news{
+      .sidebar-news{
         margin-right: 0;
       }
     });
@@ -302,7 +329,7 @@ body.dark {
       flex-wrap: wrap;
     });
   }
-  .sidebare-news{
+  .sidebar-news{
     margin-right: 15px;
     float: left;
   }
@@ -313,14 +340,14 @@ body.dark {
       margin: 0;
     });
   }
-  .sidebare-info{
+  .sidebar-info{
     margin-left: 15px;
   }
 }
 
 
 
-.sidebare-info{
+.sidebar-info{
   width: 282px;
   margin-top: 70px;
   .item{
@@ -1993,29 +2020,7 @@ body.dark {
     }
   }
 }
-.popup{
-  &#paymentModal{
-    max-width: 570px;
-    .img{
-      margin: 20px 0 30px;
-    }
-    .h2{
-      font-weight: 600;
-      font-size: 28px;
-      line-height: 28px;
-      color: #282828;
-    }
-    .popup-text{
-      line-height: 26px;
-      text-align: center;
-    }
-    .link{
-      margin-top: 20px;
-      font-weight: 400;
-      font-size: @sizeBasik;
-    }
-  }
-}
+
 
 
 

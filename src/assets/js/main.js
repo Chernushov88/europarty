@@ -1,4 +1,9 @@
 $(function ($) {
+  $( ".datepicker" ).datepicker();
+
+
+  // $.datepicker.setDefaults($.datepicker.regional['ru']);
+
   /* mask */
   //$(".input-phone").mask("+7(999) 999-99-99");
   /* navigator */
@@ -40,11 +45,30 @@ $(function ($) {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    dots: true,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 10000,
+  });
+  $('#product-slider').slick({
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    arrows: true,
     dots: false,
     speed: 1000,
     autoplay: true,
-    autoplaySpeed: 3000,
-    fade: true,
+    autoplaySpeed: 10000,
+  });
+  $('#product-slider-establishments').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 10000,
   });
   /* $('.manufactures-slider').slick({
    infinite: true,
@@ -206,6 +230,7 @@ $(function ($) {
 
 
 
+
 });
 $(document).mouseup(function (e) {
   var container = $(".drop");
@@ -261,8 +286,8 @@ window.addEventListener('load', function () {
   let menuALL = document.querySelectorAll('.menu > li');
   let close = document.querySelector('.close');
   let touch = document.querySelector('.touch_menu');
+  let selectDate = document.querySelector('.select-date');
   let popupAll = document.querySelectorAll('.popup')
-
 
 
   darken.addEventListener('click', function (e) {

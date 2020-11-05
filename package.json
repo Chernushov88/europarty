@@ -19,6 +19,7 @@
   "keywords": [],
   "license": "ISC",
   "dependencies": {
+    "jquery-datepicker": "^1.12.3",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {

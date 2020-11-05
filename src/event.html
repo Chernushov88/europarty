@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <meta name="viewport" content="width=1280px">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>event</title>
+  <!--    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
+  <!--    <link rel="stylesheet" href="./css/owl.carousel/owl.carousel.min.css">-->
+  <!--    <link rel="stylesheet" href="./css/owl.carousel/owl.theme.min.css">-->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+<header class="header">
+  <div class="header-top backgroundOrangeLight">
+    <div class="container">
+      <div class="header-top-in">
+        <ul class="col header-top-in-left menu" id="menu">
+          <li><a href="/index-dark.html">About service</a></li>
+          <li><a href="/contact.html">Contacts</a></li>
+          <li><a href="/creatorAccount-Advertising-cabinet-Yes.html">Advertising</a></li>
+          <li><a href="/news.html">News</a></li>
+          <li><a href="/fag.html">Help Center</a></li>
+        </ul>
+        <button class="touch touch_menu" onclick="touchMenu(this, '#menu')">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <ul class="col header-top-in-right">
+          <li class="lang select">
+            <img src="img/header/flag.png" alt="">
+            <a href="#" class="slct">Russian <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <ul class="drop" style="display: none;">
+              <li>Russian 1</li>
+              <li>Russian 2</li>
+              <li>Russian 3</li>
+            </ul>
+            <input type="hidden" name="select">
+          </li>
+          <li><a href="/creatorAccount-Advertising-cabinet-Yes.html">For event organizers</a></li>
+          <li><a href="/creatorAccount-Advertising-cabinet-Payment-2.html">Are you the owner of the establishment?</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="header-center">
+      <div class="header-center-logo">
+        <a href="/creatorAccount-Advertising-cabinet-No.html" class="logo"><img src="img/header/logo.png" alt=""></a>
+      </div>
+
+      <div class="header-center-city select">
+        <img src="img/header/map.png" alt="">
+        <a href="#" class="slct">Moscow <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+        <ul class="drop" style="display: none;">
+          <li>Moscow 1</li>
+          <li>Moscow 2</li>
+          <li>Moscow 3</li>
+        </ul>
+        <input type="hidden" name="select">
+      </div>
+
+
+      <div class="search">
+        <input type="text" placeholder="Events, places ...">
+        <button type="submit"></button>
+      </div>
+
+      <div class="header-center-btn">
+        <div class="daytime">
+          <img src="img/filter-section/daytime.png" alt="">
+          <a href="/index-dark.html" class="color-orange">Nighttime</a>
+        </div>
+        <a href="`/creatorAccount-Advertising-cabinet-Add-article.html" class="btn" onclick="showPopup('#register')">Register
+          now</a>
+        <a href="/creatorAccount.html" class="btn btn_orange" onclick="showPopup('#signin')">LOGIN</a>
+      </div>
+    </div>
+  </div>
+
+
+</header>
+<section class="baner-section baner-section-event">
+  <div class="baner-section-in">
+    <div class="bread-crumbs">
+      <div class="container">
+        <ul>
+          <li><a href="">Main</a></li>
+          <li class="separator"><img src="img/baner-section/separator.png" alt=""></li>
+          <li><span>Cocktail party</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="btn-block btn-block-top">
+        <a href="#" class="btn btn_white btn_radiuse27">Live music</a>
+        <a href="#" class="btn btn_white btn_radiuse27">Concert</a>
+      </div>
+      <div class="h1">Open cocktail <br>party for everyone</div>
+      <div class="event-place"><img src="img/baner-section/event-place-img.png" alt=""> Central Moscow restaurant near
+        Tsaritsyno
+      </div>
+      <div class="btn-block btn-block-bottom">
+        <a href="#" class="btn btn_orange">Add to calendar</a>
+        <a href="#" class="btn btn_white">I want to go (1 585)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content content-event">
+  <div class="container">
+    <div class="flex">
+
+      <section class="article-wrapp">
+        <div class="backgroundOrangeLight flex">
+          <div class="in">
+            <b>Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. <br>
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</b>
+          </div>
+          <div class="img"><img src="img/creator-accaunt/add-event-icon.png" alt=""></div>
+        </div>
+        <article class="text">
+          <p>Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum
+            sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla
+            luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+            dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra
+            vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+            dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra
+            vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+        </article>
+        <div class="entrance">
+          <i class="fa fa-rub" aria-hidden="true"></i>Entrance: <b> paid (check with the organizer)</b>
+        </div>
+        <div class="gallery">
+          <div class="h3"><img src="img/gallery/icon.png" alt="">Gallery:</div>
+          <div class="gallery-in">
+            <div class="gallery-col">
+              <img src="img/gallery/1.jpg" alt="">
+            </div>
+            <div class="gallery-col">
+              <img src="img/gallery/2.jpg" alt="">
+            </div>
+            <div class="gallery-col">
+              <img src="img/gallery/3.jpg" alt="">
+            </div>
+            <div class="gallery-col gallery-col-result">
+              <div class="gallery-col-result-in">+ 4 photo</div>
+            </div>
+          </div>
+        </div>
+        <article class="map">
+          <div class="title">
+            <div class="h3"><img src="img/header/map.png" alt="">Location:</div>
+            <p>Moscow, st. Ivanova, 5 Central Moscow restaurant near Tsaritsyno</p>
+          </div>
+          <div class="map-in"><img src="img/map.png" alt=""></div>
+        </article>
+      </section>
+      <aside class="sidebar-info">
+        <div class="item backgroundOrangeLight sidebar-info-content">
+          <div class="h3">Organizer:</div>
+          <ul class="list">
+            <li>
+              <div class="img"><img src="img/sidebar-info/1.jpg" alt=""></div>
+            </li>
+            <li><p>Central Moscow restaurant
+              near Tsaritsyno (the name
+              can be in several lines)</p></li>
+          </ul>
+          <div class="btn-block">
+            <a href="#" class="btn btn_white btn_radiuse27">Live music</a>
+            <a href="#" class="btn btn_white btn_radiuse27">Concert</a>
+          </div>
+          <div class="desc">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
+              dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. </p>
+          </div>
+        </div>
+        <div class="item backgroundOrangeLight sidebar-info-content">
+          <div class="h3">Share with friends:</div>
+          <ul class="social">
+            <li><a href="#"><img src="img/social/1.png" alt=""></a></li>
+            <li><a href="#"><img src="img/social/2.png" alt=""></a></li>
+            <li><a href="#"><img src="img/social/3.png" alt=""></a></li>
+            <li><a href="#"><img src="img/social/4.png" alt=""></a></li>
+            <li><a href="#"><img src="img/social/5.png" alt=""></a></li>
+            <li><a href="#"><img src="img/social/6.png" alt=""></a></li>
+          </ul>
+
+        </div>
+
+      </aside>
+    </div>
+
+  </div>
+</section>
+<section class="product-slider backgroundOrangeLight">
+  <div class="container">
+    <div class="h2">Also today you can go</div>
+
+    <div id="product-slider" class="product-slid">
+      <div class="item">
+        <a href="" class="img">
+          <span class="img-label">Live music</span>
+          <span class="like">
+                  <img src="img/product/like-img.png" alt="">
+                  <span class="number">20 046</span>
+                </span>
+          <img src="img/product/poducts-img.jpg" alt="">
+        </a>
+        <div class="item-in">
+          <div class="data">Sep 28, Sun 18:00</div>
+          <div class="h4"><a href="#">Open cocktail party
+            for everyone</a></div>
+          <ul class="list">
+            <li>
+              <a href="#">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Central Moscow restaurant near Tsaritsyno</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-rub" aria-hidden="true"></i>
+                <span>Entrance: <b>free</b></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <a href="" class="img">
+          <span class="img-label">Live music</span>
+          <span class="like">
+                  <img src="img/product/like-img.png" alt="">
+                  <span class="number">20 046</span>
+                </span>
+          <img src="img/product/poducts-img.jpg" alt="">
+        </a>
+        <div class="item-in">
+          <div class="data">Sep 28, Sun 18:00</div>
+          <div class="h4"><a href="#">Open cocktail party
+            for everyone</a></div>
+          <ul class="list">
+            <li>
+              <a href="#">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Central Moscow restaurant near Tsaritsyno</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-rub" aria-hidden="true"></i>
+                <span>Entrance: <b>free</b></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <a href="" class="img">
+          <span class="img-label">Live music</span>
+          <span class="like">
+                  <img src="img/product/like-img.png" alt="">
+                  <span class="number">20 046</span>
+                </span>
+          <img src="img/product/poducts-img.jpg" alt="">
+        </a>
+        <div class="item-in">
+          <div class="data">Sep 28, Sun 18:00</div>
+          <div class="h4"><a href="#">Open cocktail party
+            for everyone</a></div>
+          <ul class="list">
+            <li>
+              <a href="#">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Central Moscow restaurant near Tsaritsyno</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-rub" aria-hidden="true"></i>
+                <span>Entrance: <b>free</b></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <a href="" class="img">
+          <span class="img-label">Live music</span>
+          <span class="like">
+                  <img src="img/product/like-img.png" alt="">
+                  <span class="number">20 046</span>
+                </span>
+          <img src="img/product/poducts-img.jpg" alt="">
+        </a>
+        <div class="item-in">
+          <div class="data">Sep 28, Sun 18:00</div>
+          <div class="h4"><a href="#">Open cocktail party
+            for everyone</a></div>
+          <ul class="list">
+            <li>
+              <a href="#">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Central Moscow restaurant near Tsaritsyno</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-rub" aria-hidden="true"></i>
+                <span>Entrance: <b>free</b></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <a href="" class="img">
+          <span class="img-label">Live music</span>
+          <span class="like">
+                  <img src="img/product/like-img.png" alt="">
+                  <span class="number">20 046</span>
+                </span>
+          <img src="img/product/poducts-img.jpg" alt="">
+        </a>
+        <div class="item-in">
+          <div class="data">Sep 28, Sun 18:00</div>
+          <div class="h4"><a href="#">Open cocktail party
+            for everyone</a></div>
+          <ul class="list">
+            <li>
+              <a href="#">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Central Moscow restaurant near Tsaritsyno</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-rub" aria-hidden="true"></i>
+                <span>Entrance: <b>free</b></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <a href="" class="img">
+          <span class="img-label">Live music</span>
+          <span class="like">
+                  <img src="img/product/like-img.png" alt="">
+                  <span class="number">20 046</span>
+                </span>
+          <img src="img/product/poducts-img.jpg" alt="">
+        </a>
+        <div class="item-in">
+          <div class="data">Sep 28, Sun 18:00</div>
+          <div class="h4"><a href="#">Open cocktail party
+            for everyone</a></div>
+          <ul class="list">
+            <li>
+              <a href="#">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Central Moscow restaurant near Tsaritsyno</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-rub" aria-hidden="true"></i>
+                <span>Entrance: <b>free</b></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <a href="" class="img">
+          <span class="img-label">Live music</span>
+          <span class="like">
+                  <img src="img/product/like-img.png" alt="">
+                  <span class="number">20 046</span>
+                </span>
+          <img src="img/product/poducts-img.jpg" alt="">
+        </a>
+        <div class="item-in">
+          <div class="data">Sep 28, Sun 18:00</div>
+          <div class="h4"><a href="#">Open cocktail party
+            for everyone</a></div>
+          <ul class="list">
+            <li>
+              <a href="#">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Central Moscow restaurant near Tsaritsyno</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-rub" aria-hidden="true"></i>
+                <span>Entrance: <b>free</b></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <a href="" class="img">
+          <span class="img-label">Live music</span>
+          <span class="like">
+                  <img src="img/product/like-img.png" alt="">
+                  <span class="number">20 046</span>
+                </span>
+          <img src="img/product/poducts-img.jpg" alt="">
+        </a>
+        <div class="item-in">
+          <div class="data">Sep 28, Sun 18:00</div>
+          <div class="h4"><a href="#">Open cocktail party
+            for everyone</a></div>
+          <ul class="list">
+            <li>
+              <a href="#">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Central Moscow restaurant near Tsaritsyno</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-rub" aria-hidden="true"></i>
+                <span>Entrance: <b>free</b></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="flex">
+      <div class="col">
+        <div class="h6">about Europarty</div>
+        <ul>
+          <li><a href="#">About service</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Advertising</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="h6">help</div>
+        <ul>
+          <li><a href="#">For establishment owners</a></li>
+          <li><a href="#" class="active">For event organizers</a></li>
+          <li><a href="#">Help Center</a></li>
+        </ul>
+      </div>
+      <div class="col col-center">
+        <div class="col-center-in">
+          <div class="h6">account</div>
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Check in</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col col-social">
+        <div class="h6">we are in social networks</div>
+        <ul class="social">
+          <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="copypast">
+    <div class="container">
+      <div class="copypast-in">
+        <span>© Europarty. 2020. All rights reserved.</span>
+        <ul>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms of use</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="popup" id="signin">
+  <a href="#" class="close" onclick="hidePopup('#signin')">
+    <img src="img/close.png" alt="">
+  </a>
+  <div class="h3">Sign in</div>
+  <div class="popup-text">Please fill in all required fields</div>
+  <form action="">
+    <ul>
+      <li>
+        <input type="email" placeholder="E-mail" required>
+        <div class="icon">
+          <img src="img/email-icon.png" alt="">
+        </div>
+      </li>
+      <li>
+        <input type="password" placeholder="Password">
+        <div class="icon showPass">
+          <img src="img/password-icon.png" alt="">
+        </div>
+      </li>
+      <li>
+        <button type="submit" class="btn btn_orange">отправить</button>
+      </li>
+    </ul>
+  </form>
+  <ul class="popup-list">
+    <li>
+      <ul class="popup-list-in">
+        <li><a href="#">Forgot your password?</a></li>
+        <li><span>Don't have an account?</span> <a href="#">Register now</a></li>
+      </ul>
+    <li>
+      <ul class="popup-list-in">
+        <li><b>Login with:</b></li>
+        <li>
+          <ul class="social">
+            <li><a href="#"><img src="img/social/google-bg.png" alt=""></a></li>
+            <li><a href="#"><img src="img/social/facebook-bg.png" alt=""></a></li>
+            <li><a href="#"><img src="img/social/apple-bg.png" alt=""></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <p>By logging into your account or creating a new one, you agree to the policy<a href="#">confidentiality</a> and <a
+      href="#">user agreement</a></p>
+</div>
+<div class="popup" id="register">
+  <a href="#" class="close" onclick="hidePopup('#register')">
+    <img src="img/close.png" alt="">
+  </a>
+  <div class="h3">Register now</div>
+  <div class="popup-text">Choose your role on the portal:</div>
+  <ul class="list-radio">
+    <li>
+      <input type="radio" class="radio" id="radio-1" name="radio">
+      <label for="radio-1">
+        <b>I am a user</b>
+        <span>I am interested in events and want to receive interesting offers</span>
+      </label>
+    </li>
+    <li>
+      <input type="radio" class="radio" id="radio-2" name="radio">
+      <label for="radio-2">
+        <b>I am a representative of the institution</b>
+        <span>I want to publish my establishment or event on the portal</span>
+      </label>
+    </li>
+  </ul>
+  <form action="">
+    <ul>
+      <li>
+        <input type="email" placeholder="E-mail" required>
+        <div class="icon">
+          <img src="img/password-icon.png" alt="">
+        </div>
+      </li>
+      <li>
+        <input type="password" placeholder="Password" class="">
+        <div class="icon showPass">
+          <img src="img/password-icon.png" alt="">
+        </div>
+      </li>
+      <li>
+        <input type="password" placeholder="Confirm password" class="">
+        <div class="icon showPass">
+          <img src="img/password-icon.png" alt="">
+        </div>
+      </li>
+      <li>
+        <button type="submit" class="btn btn_orange">отправить</button>
+      </li>
+    </ul>
+  </form>
+  <ul class="popup-list">
+    <li>
+      <ul class="popup-list-in" style="justify-content: center;">
+        <li>Have an account? <a href="#">Sign in</a></li>
+      </ul>
+    <li>
+      <ul class="popup-list-in">
+        <li><b>Register via:</b></li>
+        <li>
+          <ul class="social">
+            <li><a href="#"><img src="img/social/google-bg.png" alt=""></a></li>
+            <li><a href="#"><img src="img/social/facebook-bg.png" alt=""></a></li>
+            <li><a href="#"><img src="img/social/apple-bg.png" alt=""></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <p>By logging into your account or creating a new one, you agree to the policy<a href="#">confidentiality</a> and <a
+      href="#">user agreement</a></p>
+</div>
+
+<div class="test-pages hidden">
+  <ul>
+    <li><a target="_blank" href="/index-dark.html#">/index-dark.html#</a></li>
+    <br>
+    <li><a target="_blank" href="/fag-contact.html">/fag-contact.html</a></li>
+    <br>
+    <li><a target="_blank" href="/fag-contact.html">/fag-contact.html</a></li>
+    <br>
+    <li><a target="_blank" href="/creatorAccount-My-establishments-view.html">/creatorAccount-My-establishments-view.html</a>
+    </li>
+    <br>
+    <li><a target="_blank" href="/creatorAccount-My-establishments-add-event.html">/creatorAccount-My-establishments-add-event.html</a>
+    </li>
+    <br>
+    <li><a target="_blank"
+           href="/creatorAccount-My-establishments-add.html">/creatorAccount-My-establishments-add.html</a></li>
+    <br>
+    <li><a target="_blank" href="/creatorAccount-Advertising-cabinet-Yes.html">/creatorAccount-Advertising-cabinet-Yes.html</a>
+    </li>
+    <br>
+    <li><a target="_blank" href="/creatorAccount-Advertising-cabinet-Payment-2.html">/creatorAccount-Advertising-cabinet-Payment-2.html</a>
+    </li>
+    <br>
+    <li><a target="_blank" href="/creatorAccount-Advertising-cabinet-Payment.html">/creatorAccount-Advertising-cabinet-Payment.html</a>
+    </li>
+    <br>
+    <li><a target="_blank" href="/creatorAccount-Advertising-cabinet-No.html">/creatorAccount-Advertising-cabinet-No.html</a>
+    </li>
+    <br>
+    <li><a target="_blank" href="/creatorAccount-Advertising-cabinet-Add-article-2.html">/creatorAccount-Advertising-cabinet-Add-article-2.html</a>
+    </li>
+    <br>
+    <li><a target="_blank" href="/creatorAccount-Advertising-cabinet-Add-article.html">/creatorAccount-Advertising-cabinet-Add-article.html</a>
+    </li>
+    <br>
+    <li><a target="_blank" href="/creatorAccount.html">/creatorAccount.html</a></li>
+    <br>
+    <li><a target="_blank" href="/creatorAccount-Advertising-cabinet-Add.html">/creatorAccount-Advertising-cabinet-Add.html</a>
+    </li>
+  </ul>
+</div>
+<div class="darken"></div>
+<div id="scroll"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></div>
+<script src="js/main.js"></script>
+<!--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
+<!--<script>-->
+<!--    AOS.init();-->
+<!--</script>-->
+</body>
+</html>
+

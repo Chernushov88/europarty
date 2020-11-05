@@ -24,7 +24,7 @@ function styles() {
   return gulp.src('./src/less/main.less')
     .pipe(gulpif(isDev, sourcemaps.init()))
     .pipe(less())
-    //.pipe(concat('./assets/css/owl.carousel/owl.carousel.min.css'))
+    //.pipe(concat('./assets/css/jquery-ui.min.css'))
     .pipe(gcmq())
     .pipe(autoprefixer({
       browsers: ['> 0.01%'],
@@ -83,9 +83,8 @@ function fonts() {
 function scriptsDev() {
   return gulp.src([
     "./src/assets/js/jquery.min.js",
-    "./src/assets/js/jquery.maskedinput/jquery.maskedinput.min.js",
     "./src/assets/js/owl.carousel/owl.carousel.min.js",
-    "./src/assets/js/jquery.fancybox/jquery.fancybox.min.js",
+    "./src/assets/js/jquery-ui.min.js",
     "./src/assets/js/bootstrap/tagsinput.js",
     "./src/assets/js/slick/slick.min.js",
     "./src/assets/js/main.js",
